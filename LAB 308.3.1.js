@@ -41,3 +41,8 @@ let avgAge = totalAge / result.length;
 console.log("The average age is "+ avgAge)
 
 // Part V
+let csv = "ID,Name,Occupation,Age\n";
+for(const person of result){
+    csv += `${person.id},${person.name},${person.occupation},${person.age}\n`;
+}
+console.log(csv);
